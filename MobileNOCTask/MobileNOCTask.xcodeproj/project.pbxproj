@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A573B2B321DFAE45008A1C9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2B221DFAE45008A1C9D /* AppDelegate.swift */; };
-		A573B2B521DFAE45008A1C9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2B421DFAE45008A1C9D /* ViewController.swift */; };
 		A573B2B821DFAE45008A1C9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A573B2B621DFAE45008A1C9D /* Main.storyboard */; };
 		A573B2BA21DFAE47008A1C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A573B2B921DFAE47008A1C9D /* Assets.xcassets */; };
 		A573B2BD21DFAE47008A1C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A573B2BB21DFAE47008A1C9D /* LaunchScreen.storyboard */; };
 		A573B2C821DFAE47008A1C9D /* MobileNOCTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2C721DFAE47008A1C9D /* MobileNOCTaskTests.swift */; };
 		A573B2D321DFAE47008A1C9D /* MobileNOCTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2D221DFAE47008A1C9D /* MobileNOCTaskUITests.swift */; };
+		A573B2EB21DFB5CF008A1C9D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2EA21DFB5CF008A1C9D /* HomeViewController.swift */; };
+		A573B2EE21DFB61B008A1C9D /* ServerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2EC21DFB61B008A1C9D /* ServerTableViewCell.swift */; };
+		A573B2EF21DFB61B008A1C9D /* ServerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A573B2ED21DFB61B008A1C9D /* ServerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		A573B2AF21DFAE45008A1C9D /* MobileNOCTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNOCTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A573B2B221DFAE45008A1C9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A573B2B421DFAE45008A1C9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A573B2B721DFAE45008A1C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A573B2B921DFAE47008A1C9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A573B2BC21DFAE47008A1C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		A573B2CE21DFAE47008A1C9D /* MobileNOCTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileNOCTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A573B2D221DFAE47008A1C9D /* MobileNOCTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileNOCTaskUITests.swift; sourceTree = "<group>"; };
 		A573B2D421DFAE47008A1C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A573B2EA21DFB5CF008A1C9D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A573B2EC21DFB61B008A1C9D /* ServerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTableViewCell.swift; sourceTree = "<group>"; };
+		A573B2ED21DFB61B008A1C9D /* ServerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,8 @@
 		A573B2B121DFAE45008A1C9D /* MobileNOCTask */ = {
 			isa = PBXGroup;
 			children = (
-				A573B2B221DFAE45008A1C9D /* AppDelegate.swift */,
-				A573B2B421DFAE45008A1C9D /* ViewController.swift */,
-				A573B2B621DFAE45008A1C9D /* Main.storyboard */,
-				A573B2B921DFAE47008A1C9D /* Assets.xcassets */,
-				A573B2BB21DFAE47008A1C9D /* LaunchScreen.storyboard */,
-				A573B2BE21DFAE47008A1C9D /* Info.plist */,
+				A573B2E121DFB359008A1C9D /* Shared */,
+				A573B2E321DFB378008A1C9D /* AppCompnents */,
 			);
 			path = MobileNOCTask;
 			sourceTree = "<group>";
@@ -123,6 +123,76 @@
 				A573B2D421DFAE47008A1C9D /* Info.plist */,
 			);
 			path = MobileNOCTaskUITests;
+			sourceTree = "<group>";
+		};
+		A573B2E021DFB172008A1C9D /* App Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A573B2B221DFAE45008A1C9D /* AppDelegate.swift */,
+				A573B2B921DFAE47008A1C9D /* Assets.xcassets */,
+				A573B2BB21DFAE47008A1C9D /* LaunchScreen.storyboard */,
+				A573B2BE21DFAE47008A1C9D /* Info.plist */,
+			);
+			path = "App Assets";
+			sourceTree = "<group>";
+		};
+		A573B2E121DFB359008A1C9D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A573B2E021DFB172008A1C9D /* App Assets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A573B2E321DFB378008A1C9D /* AppCompnents */ = {
+			isa = PBXGroup;
+			children = (
+				A573B2E421DFB399008A1C9D /* Home */,
+			);
+			path = AppCompnents;
+			sourceTree = "<group>";
+		};
+		A573B2E421DFB399008A1C9D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A573B2E921DFB5B8008A1C9D /* Model */,
+				A573B2E821DFB5B2008A1C9D /* View */,
+				A573B2E621DFB596008A1C9D /* Controller */,
+				A573B2E521DFB3B7008A1C9D /* Storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A573B2E521DFB3B7008A1C9D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A573B2B621DFAE45008A1C9D /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A573B2E621DFB596008A1C9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A573B2EA21DFB5CF008A1C9D /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A573B2E821DFB5B2008A1C9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A573B2EC21DFB61B008A1C9D /* ServerTableViewCell.swift */,
+				A573B2ED21DFB61B008A1C9D /* ServerTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A573B2E921DFB5B8008A1C9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +301,7 @@
 			files = (
 				A573B2BD21DFAE47008A1C9D /* LaunchScreen.storyboard in Resources */,
 				A573B2BA21DFAE47008A1C9D /* Assets.xcassets in Resources */,
+				A573B2EF21DFB61B008A1C9D /* ServerTableViewCell.xib in Resources */,
 				A573B2B821DFAE45008A1C9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A573B2B521DFAE45008A1C9D /* ViewController.swift in Sources */,
 				A573B2B321DFAE45008A1C9D /* AppDelegate.swift in Sources */,
+				A573B2EE21DFB61B008A1C9D /* ServerTableViewCell.swift in Sources */,
+				A573B2EB21DFB5CF008A1C9D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +506,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2T2XGF8AGY;
-				INFOPLIST_FILE = MobileNOCTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MobileNOCTask/Shared/App Assets/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,7 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moelnaggar.MobileNOCTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -452,7 +525,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2T2XGF8AGY;
-				INFOPLIST_FILE = MobileNOCTask/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MobileNOCTask/Shared/App Assets/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moelnaggar.MobileNOCTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
