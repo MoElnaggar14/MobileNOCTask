@@ -13,6 +13,22 @@ enum HomeRequest: URLRequestBuilder {
 
     case machine(page: Int)
     
+    var mobileNOCManager: Alamofire.SessionManager {
+        
+        let serverTrustPolicies: [String: ServerTrustPolicy] = [
+            "45.55.43.15": .disableEvaluation
+        ]
+        
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
+        let manager = Alamofire.SessionManager(
+            configuration: URLSessionConfiguration.default,
+            serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
+        )
+        
+        return manager
+    }
+    
     // MARK:- Paths
     internal var path: ServerPaths {
         switch self {

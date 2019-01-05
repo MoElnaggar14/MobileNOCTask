@@ -27,6 +27,9 @@
 		A573B32021E0F238008A1C9D /* ServerPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B31E21E0F238008A1C9D /* ServerPaths.swift */; };
 		A573B32121E0F238008A1C9D /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B31F21E0F238008A1C9D /* URLRequestBuilder.swift */; };
 		A573B32421E0F374008A1C9D /* HomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B32321E0F374008A1C9D /* HomeRequest.swift */; };
+		A573B32821E0F5DA008A1C9D /* LoadMoreActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B32621E0F5DA008A1C9D /* LoadMoreActivityIndicator.swift */; };
+		A573B32921E0F5DA008A1C9D /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B32721E0F5DA008A1C9D /* ActivityView.swift */; };
+		A573B32F21E13517008A1C9D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B32E21E13517008A1C9D /* Alert.swift */; };
 		EE3DA35CEDD76CB371097154 /* Pods_MobileNOCTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6726138BF373EEA37F495B /* Pods_MobileNOCTaskUITests.framework */; };
 		F2FA17C6E33E6A2F40B6ED21 /* Pods_MobileNOCTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D58B44A9EBB4968122AAFE /* Pods_MobileNOCTask.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +82,9 @@
 		A573B31E21E0F238008A1C9D /* ServerPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerPaths.swift; sourceTree = "<group>"; };
 		A573B31F21E0F238008A1C9D /* URLRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		A573B32321E0F374008A1C9D /* HomeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequest.swift; sourceTree = "<group>"; };
+		A573B32621E0F5DA008A1C9D /* LoadMoreActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreActivityIndicator.swift; sourceTree = "<group>"; };
+		A573B32721E0F5DA008A1C9D /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		A573B32E21E13517008A1C9D /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		A9017DD7AD0CFFF3472F9F92 /* Pods-MobileNOCTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTaskUITests/Pods-MobileNOCTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B52290DE75CFC81D22543EAD /* Pods-MobileNOCTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTaskTests/Pods-MobileNOCTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		B917F304C22CFBAB8D1934FE /* Pods-MobileNOCTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTask/Pods-MobileNOCTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +192,7 @@
 		A573B2E121DFB359008A1C9D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A573B32521E0F5C9008A1C9D /* Classes */,
 				A573B30D21E0EE8A008A1C9D /* Networking */,
 				A573B30621E0E0FA008A1C9D /* Extensions */,
 				A573B2E021DFB172008A1C9D /* App Assets */,
@@ -298,6 +305,16 @@
 				A573B32321E0F374008A1C9D /* HomeRequest.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A573B32521E0F5C9008A1C9D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A573B32721E0F5DA008A1C9D /* ActivityView.swift */,
+				A573B32621E0F5DA008A1C9D /* LoadMoreActivityIndicator.swift */,
+				A573B32E21E13517008A1C9D /* Alert.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		C6E6C5135D3B73FEB5DC0168 /* Pods */ = {
@@ -548,10 +565,13 @@
 				A573B32121E0F238008A1C9D /* URLRequestBuilder.swift in Sources */,
 				A573B30A21E0E568008A1C9D /* UIView+Border.swift in Sources */,
 				A573B31921E0F00D008A1C9D /* ResponseHandler.swift in Sources */,
+				A573B32921E0F5DA008A1C9D /* ActivityView.swift in Sources */,
 				A573B32021E0F238008A1C9D /* ServerPaths.swift in Sources */,
 				A573B2EB21DFB5CF008A1C9D /* HomeViewController.swift in Sources */,
 				A573B31621E0EF9D008A1C9D /* CodableInit.swift in Sources */,
+				A573B32821E0F5DA008A1C9D /* LoadMoreActivityIndicator.swift in Sources */,
 				A573B31C21E0F082008A1C9D /* APIRequestHandler.swift in Sources */,
+				A573B32F21E13517008A1C9D /* Alert.swift in Sources */,
 				A573B32421E0F374008A1C9D /* HomeRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,9 +1,9 @@
 //
 //  ServerPaths.swift
-//  MIC
+//  MobileNOCTask
 //
-//  Created by Mohammed Elnaggar on 10/15/18.
-//  Copyright © 2018 Mohammed Elnaggar. All rights reserved.
+//  Created by Mohammed Elnaggar on 1/5/19.
+//  Copyright © 2019 Mohammed Elnaggar. All rights reserved.
 //
 
 import Foundation

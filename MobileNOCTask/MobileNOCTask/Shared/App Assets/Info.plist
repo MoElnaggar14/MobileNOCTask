@@ -38,5 +38,29 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>45.55.43.15:9090</key>
+		<dict>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSExceptionRequiresForwardSecrecy</key>
+			<true/>
+			<key>NSExceptionMinimumTLSVersion</key>
+			<string>TLSv1.2</string>
+			<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+			<false/>
+			<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+			<true/>
+			<key>NSThirdPartyExceptionMinimumTLSVersion</key>
+			<string>TLSv1.2</string>
+			<key>NSRequiresCertificateTransparency</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

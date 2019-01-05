@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ServerDetailsResponse: Codable ,CodableInit {
+struct ServerDetailsResponse: Codable, CodableInit {
     let content: [Content]
     let pageable: Pageable
     let totalPages, totalElements: Int

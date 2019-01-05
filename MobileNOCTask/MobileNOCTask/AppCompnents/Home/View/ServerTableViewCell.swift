@@ -48,7 +48,7 @@ class ServerTableViewCell: UITableViewCell {
         selectionStyle = .none
     }
     
-    func configureCell() {
+    func configureCell(serverDetails: Content) {
         
     }
 }

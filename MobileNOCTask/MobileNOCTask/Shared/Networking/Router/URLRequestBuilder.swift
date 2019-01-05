@@ -1,9 +1,9 @@
 //
 //  URLRequestBuilder.swift
-//  MIC
+//  MobileNOCTask
 //
-//  Created by Mohammed Elnaggar on 10/15/18.
-//  Copyright © 2018 Mohammed Elnaggar. All rights reserved.
+//  Created by Mohammed Elnaggar on 1/5/19.
+//  Copyright © 2019 Mohammed Elnaggar. All rights reserved.
 //
 
 import Foundation
@@ -25,6 +25,8 @@ protocol URLRequestBuilder: URLRequestConvertible, APIRequestHandler {
     var encoding: ParameterEncoding { get }
     
     var urlRequest: URLRequest { get }
+    
+    var mobileNOCManager: Alamofire.SessionManager { get }
 }
 
 extension URLRequestBuilder {
@@ -46,7 +48,6 @@ extension URLRequestBuilder {
         }
     }
     
-    
     var urlRequest: URLRequest {
         var request = URLRequest(url: requestURL)
         request.httpMethod = method.rawValue
@@ -58,9 +59,3 @@ extension URLRequestBuilder {
     }
 }
 
-extension NSMutableData {
-    func appendString(_ string: String) {
-        let data = string.data(using: String.Encoding.utf8, allowLossyConversion: false)
-        append(data!)
-    }
-}
