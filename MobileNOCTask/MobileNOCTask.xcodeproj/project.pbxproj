@@ -16,6 +16,8 @@
 		A573B2EB21DFB5CF008A1C9D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2EA21DFB5CF008A1C9D /* HomeViewController.swift */; };
 		A573B2EE21DFB61B008A1C9D /* ServerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2EC21DFB61B008A1C9D /* ServerTableViewCell.swift */; };
 		A573B2EF21DFB61B008A1C9D /* ServerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A573B2ED21DFB61B008A1C9D /* ServerTableViewCell.xib */; };
+		A573B30821E0E11A008A1C9D /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B30721E0E11A008A1C9D /* UIImage+resize.swift */; };
+		A573B30A21E0E568008A1C9D /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B30921E0E568008A1C9D /* UIView+Border.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		A573B2EA21DFB5CF008A1C9D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A573B2EC21DFB61B008A1C9D /* ServerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTableViewCell.swift; sourceTree = "<group>"; };
 		A573B2ED21DFB61B008A1C9D /* ServerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerTableViewCell.xib; sourceTree = "<group>"; };
+		A573B30721E0E11A008A1C9D /* UIImage+resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
+		A573B30921E0E568008A1C9D /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		A573B2E121DFB359008A1C9D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A573B30621E0E0FA008A1C9D /* Extensions */,
 				A573B2E021DFB172008A1C9D /* App Assets */,
 			);
 			path = Shared;
@@ -193,6 +198,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A573B30621E0E0FA008A1C9D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A573B30721E0E11A008A1C9D /* UIImage+resize.swift */,
+				A573B30921E0E568008A1C9D /* UIView+Border.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A573B2B321DFAE45008A1C9D /* AppDelegate.swift in Sources */,
+				A573B30821E0E11A008A1C9D /* UIImage+resize.swift in Sources */,
 				A573B2EE21DFB61B008A1C9D /* ServerTableViewCell.swift in Sources */,
+				A573B30A21E0E568008A1C9D /* UIView+Border.swift in Sources */,
 				A573B2EB21DFB5CF008A1C9D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
