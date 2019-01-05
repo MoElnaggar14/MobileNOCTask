@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B7ECE4AD6F932DF9560B6FC /* Pods_MobileNOCTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0DBE6FCF287E62CEE49BF2 /* Pods_MobileNOCTaskTests.framework */; };
 		A573B2B321DFAE45008A1C9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B2B221DFAE45008A1C9D /* AppDelegate.swift */; };
 		A573B2B821DFAE45008A1C9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A573B2B621DFAE45008A1C9D /* Main.storyboard */; };
 		A573B2BA21DFAE47008A1C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A573B2B921DFAE47008A1C9D /* Assets.xcassets */; };
@@ -18,6 +19,16 @@
 		A573B2EF21DFB61B008A1C9D /* ServerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A573B2ED21DFB61B008A1C9D /* ServerTableViewCell.xib */; };
 		A573B30821E0E11A008A1C9D /* UIImage+resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B30721E0E11A008A1C9D /* UIImage+resize.swift */; };
 		A573B30A21E0E568008A1C9D /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B30921E0E568008A1C9D /* UIView+Border.swift */; };
+		A573B30C21E0EDA8008A1C9D /* ServerDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B30B21E0EDA7008A1C9D /* ServerDetailsResponse.swift */; };
+		A573B31621E0EF9D008A1C9D /* CodableInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B31521E0EF9D008A1C9D /* CodableInit.swift */; };
+		A573B31921E0F00D008A1C9D /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B31721E0F00C008A1C9D /* ResponseHandler.swift */; };
+		A573B31A21E0F00D008A1C9D /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B31821E0F00D008A1C9D /* ServerResponse.swift */; };
+		A573B31C21E0F082008A1C9D /* APIRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B31B21E0F082008A1C9D /* APIRequestHandler.swift */; };
+		A573B32021E0F238008A1C9D /* ServerPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B31E21E0F238008A1C9D /* ServerPaths.swift */; };
+		A573B32121E0F238008A1C9D /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B31F21E0F238008A1C9D /* URLRequestBuilder.swift */; };
+		A573B32421E0F374008A1C9D /* HomeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A573B32321E0F374008A1C9D /* HomeRequest.swift */; };
+		EE3DA35CEDD76CB371097154 /* Pods_MobileNOCTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6726138BF373EEA37F495B /* Pods_MobileNOCTaskUITests.framework */; };
+		F2FA17C6E33E6A2F40B6ED21 /* Pods_MobileNOCTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D58B44A9EBB4968122AAFE /* Pods_MobileNOCTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B95EA1782B48FD7E03B038 /* Pods-MobileNOCTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTaskUITests/Pods-MobileNOCTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		03F4E0E97DC2CE6CCE69EA4C /* Pods-MobileNOCTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTask/Pods-MobileNOCTask.release.xcconfig"; sourceTree = "<group>"; };
+		09D58B44A9EBB4968122AAFE /* Pods_MobileNOCTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNOCTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6726138BF373EEA37F495B /* Pods_MobileNOCTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNOCTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0DBE6FCF287E62CEE49BF2 /* Pods_MobileNOCTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileNOCTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A573B2AF21DFAE45008A1C9D /* MobileNOCTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNOCTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A573B2B221DFAE45008A1C9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A573B2B721DFAE45008A1C9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +71,18 @@
 		A573B2ED21DFB61B008A1C9D /* ServerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerTableViewCell.xib; sourceTree = "<group>"; };
 		A573B30721E0E11A008A1C9D /* UIImage+resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resize.swift"; sourceTree = "<group>"; };
 		A573B30921E0E568008A1C9D /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		A573B30B21E0EDA7008A1C9D /* ServerDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerDetailsResponse.swift; sourceTree = "<group>"; };
+		A573B31521E0EF9D008A1C9D /* CodableInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableInit.swift; sourceTree = "<group>"; };
+		A573B31721E0F00C008A1C9D /* ResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		A573B31821E0F00D008A1C9D /* ServerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		A573B31B21E0F082008A1C9D /* APIRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestHandler.swift; sourceTree = "<group>"; };
+		A573B31E21E0F238008A1C9D /* ServerPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerPaths.swift; sourceTree = "<group>"; };
+		A573B31F21E0F238008A1C9D /* URLRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		A573B32321E0F374008A1C9D /* HomeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRequest.swift; sourceTree = "<group>"; };
+		A9017DD7AD0CFFF3472F9F92 /* Pods-MobileNOCTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTaskUITests/Pods-MobileNOCTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B52290DE75CFC81D22543EAD /* Pods-MobileNOCTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTaskTests/Pods-MobileNOCTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		B917F304C22CFBAB8D1934FE /* Pods-MobileNOCTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTask/Pods-MobileNOCTask.debug.xcconfig"; sourceTree = "<group>"; };
+		F40909D8105FED21355F4AC9 /* Pods-MobileNOCTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileNOCTaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileNOCTaskTests/Pods-MobileNOCTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FA17C6E33E6A2F40B6ED21 /* Pods_MobileNOCTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7ECE4AD6F932DF9560B6FC /* Pods_MobileNOCTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +106,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE3DA35CEDD76CB371097154 /* Pods_MobileNOCTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A7EE67515EEF371BE7EE1FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09D58B44A9EBB4968122AAFE /* Pods_MobileNOCTask.framework */,
+				9E0DBE6FCF287E62CEE49BF2 /* Pods_MobileNOCTaskTests.framework */,
+				2D6726138BF373EEA37F495B /* Pods_MobileNOCTaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A573B2A621DFAE45008A1C9D = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +130,8 @@
 				A573B2C621DFAE47008A1C9D /* MobileNOCTaskTests */,
 				A573B2D121DFAE47008A1C9D /* MobileNOCTaskUITests */,
 				A573B2B021DFAE45008A1C9D /* Products */,
+				C6E6C5135D3B73FEB5DC0168 /* Pods */,
+				2A7EE67515EEF371BE7EE1FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +186,7 @@
 		A573B2E121DFB359008A1C9D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A573B30D21E0EE8A008A1C9D /* Networking */,
 				A573B30621E0E0FA008A1C9D /* Extensions */,
 				A573B2E021DFB172008A1C9D /* App Assets */,
 			);
@@ -160,6 +204,7 @@
 		A573B2E421DFB399008A1C9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A573B32221E0F35A008A1C9D /* Network */,
 				A573B2E921DFB5B8008A1C9D /* Model */,
 				A573B2E821DFB5B2008A1C9D /* View */,
 				A573B2E621DFB596008A1C9D /* Controller */,
@@ -196,6 +241,7 @@
 		A573B2E921DFB5B8008A1C9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A573B30B21E0EDA7008A1C9D /* ServerDetailsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +255,64 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A573B30D21E0EE8A008A1C9D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A573B31D21E0F1F3008A1C9D /* Router */,
+				A573B30F21E0EEB7008A1C9D /* Request */,
+				A573B30E21E0EEA5008A1C9D /* Response */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A573B30E21E0EEA5008A1C9D /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A573B31521E0EF9D008A1C9D /* CodableInit.swift */,
+				A573B31721E0F00C008A1C9D /* ResponseHandler.swift */,
+				A573B31821E0F00D008A1C9D /* ServerResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A573B30F21E0EEB7008A1C9D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A573B31B21E0F082008A1C9D /* APIRequestHandler.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		A573B31D21E0F1F3008A1C9D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A573B31E21E0F238008A1C9D /* ServerPaths.swift */,
+				A573B31F21E0F238008A1C9D /* URLRequestBuilder.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A573B32221E0F35A008A1C9D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A573B32321E0F374008A1C9D /* HomeRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C6E6C5135D3B73FEB5DC0168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B917F304C22CFBAB8D1934FE /* Pods-MobileNOCTask.debug.xcconfig */,
+				03F4E0E97DC2CE6CCE69EA4C /* Pods-MobileNOCTask.release.xcconfig */,
+				F40909D8105FED21355F4AC9 /* Pods-MobileNOCTaskTests.debug.xcconfig */,
+				B52290DE75CFC81D22543EAD /* Pods-MobileNOCTaskTests.release.xcconfig */,
+				A9017DD7AD0CFFF3472F9F92 /* Pods-MobileNOCTaskUITests.debug.xcconfig */,
+				00B95EA1782B48FD7E03B038 /* Pods-MobileNOCTaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,9 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A573B2D721DFAE47008A1C9D /* Build configuration list for PBXNativeTarget "MobileNOCTask" */;
 			buildPhases = (
+				088691D41013B3963FD9B6B7 /* [CP] Check Pods Manifest.lock */,
 				A573B2AB21DFAE45008A1C9D /* Sources */,
 				A573B2AC21DFAE45008A1C9D /* Frameworks */,
 				A573B2AD21DFAE45008A1C9D /* Resources */,
+				5307A046173C1345949B2849 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A573B2DA21DFAE47008A1C9D /* Build configuration list for PBXNativeTarget "MobileNOCTaskTests" */;
 			buildPhases = (
+				046312BB48E4694B176A6ABD /* [CP] Check Pods Manifest.lock */,
 				A573B2BF21DFAE47008A1C9D /* Sources */,
 				A573B2C021DFAE47008A1C9D /* Frameworks */,
 				A573B2C121DFAE47008A1C9D /* Resources */,
@@ -251,6 +358,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A573B2DD21DFAE47008A1C9D /* Build configuration list for PBXNativeTarget "MobileNOCTaskUITests" */;
 			buildPhases = (
+				7E467FB60A836B2852EB988A /* [CP] Check Pods Manifest.lock */,
 				A573B2CA21DFAE47008A1C9D /* Sources */,
 				A573B2CB21DFAE47008A1C9D /* Frameworks */,
 				A573B2CC21DFAE47008A1C9D /* Resources */,
@@ -336,16 +444,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		046312BB48E4694B176A6ABD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileNOCTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		088691D41013B3963FD9B6B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileNOCTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5307A046173C1345949B2849 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobileNOCTask/Pods-MobileNOCTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileNOCTask/Pods-MobileNOCTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E467FB60A836B2852EB988A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileNOCTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A573B2AB21DFAE45008A1C9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A573B2B321DFAE45008A1C9D /* AppDelegate.swift in Sources */,
+				A573B30C21E0EDA8008A1C9D /* ServerDetailsResponse.swift in Sources */,
 				A573B30821E0E11A008A1C9D /* UIImage+resize.swift in Sources */,
 				A573B2EE21DFB61B008A1C9D /* ServerTableViewCell.swift in Sources */,
+				A573B31A21E0F00D008A1C9D /* ServerResponse.swift in Sources */,
+				A573B32121E0F238008A1C9D /* URLRequestBuilder.swift in Sources */,
 				A573B30A21E0E568008A1C9D /* UIView+Border.swift in Sources */,
+				A573B31921E0F00D008A1C9D /* ResponseHandler.swift in Sources */,
+				A573B32021E0F238008A1C9D /* ServerPaths.swift in Sources */,
 				A573B2EB21DFB5CF008A1C9D /* HomeViewController.swift in Sources */,
+				A573B31621E0EF9D008A1C9D /* CodableInit.swift in Sources */,
+				A573B31C21E0F082008A1C9D /* APIRequestHandler.swift in Sources */,
+				A573B32421E0F374008A1C9D /* HomeRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +725,7 @@
 		};
 		A573B2D821DFAE47008A1C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B917F304C22CFBAB8D1934FE /* Pods-MobileNOCTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +745,7 @@
 		};
 		A573B2D921DFAE47008A1C9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F4E0E97DC2CE6CCE69EA4C /* Pods-MobileNOCTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -556,6 +765,7 @@
 		};
 		A573B2DB21DFAE47008A1C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40909D8105FED21355F4AC9 /* Pods-MobileNOCTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -577,6 +787,7 @@
 		};
 		A573B2DC21DFAE47008A1C9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52290DE75CFC81D22543EAD /* Pods-MobileNOCTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,6 +809,7 @@
 		};
 		A573B2DE21DFAE47008A1C9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9017DD7AD0CFFF3472F9F92 /* Pods-MobileNOCTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +830,7 @@
 		};
 		A573B2DF21DFAE47008A1C9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00B95EA1782B48FD7E03B038 /* Pods-MobileNOCTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

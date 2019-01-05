@@ -1,0 +1,6 @@
+framework module Pods_MobileNOCTask {
+  umbrella header "Pods-MobileNOCTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
