@@ -49,6 +49,32 @@ class ServerTableViewCell: UITableViewCell {
     }
     
     func configureCell(serverDetails: Content) {
-        
+        serverNameLabel.text = serverDetails.name
+        serverSerialLabel.text = serverDetails.serialNumber
+        serverIPLabel.text = serverDetails.ipAddress
+        subnetIPLabel.text = serverDetails.ipSubnetMask
+
+        switch serverDetails.status.id {
+        case 1:
+            serverStatusLabel.backgroundColor = .green
+        case 2:
+            serverStatusLabel.backgroundColor = .orange
+        case 3:
+            serverStatusLabel.backgroundColor = .yellow
+        case 4:
+            serverStatusLabel.backgroundColor = .red
+        default:
+            serverStatusLabel.backgroundColor = .black
+        }
+//        serverReasonLabel.text = serverDetails.status.statusValue
+    }
+    
+    override func prepareForReuse() {
+        serverNameLabel.text = nil
+        serverSerialLabel.text = nil
+        serverIPLabel.text = nil
+        subnetIPLabel.text = nil
+        serverReasonLabel.text = nil
+        serverStatusLabel.text = nil
     }
 }
